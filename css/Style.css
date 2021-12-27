@@ -1,3 +1,6 @@
+/*
+    Tipografía
+*/
 @import"https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap";
 
 @font-face {
@@ -8,6 +11,9 @@
     font-style: normal
 }
 
+/*
+    Utilitarios
+*/
 h1,
 h2,
 h3,
@@ -24,20 +30,23 @@ a {
     outline: none;
 }
 
-p {
-    line-height: 1.6;
-}
-
-html {
-    scroll-padding-top: 70px;
-    scroll-behavior: smooth;
-}
 
 body {
     font-family: "Montserrat", sans-serif;
     color: #1a3365;
     font-size: 16px;
 }
+
+.sinpa{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/*
+    Header
+*/
+
 
 .nav-sticky.navbar-custom {
     margin-top: 0px;
@@ -67,28 +76,6 @@ body {
 
 /* barra de navegacion responsive*/
 
-.hamburgesa {
-    position: relative;
-    background-color: transparent;
-    left: 0px;
-    top: 0px;
-    padding: 20px 20px;
-    z-index: 1002;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: pointer;
-}
-
-.hamburgesa .is-acive {
-    background-color: none;
-}
 
 .-layer {
     background-color: #333333;
@@ -102,106 +89,7 @@ body {
     -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
     transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
 }
-
-.hamburgesa:hover .-navbar-toggler{
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%);
-}
-
-.hamburgesa:hover .-icon__list{
-    -webkit-transform:translateY(50%);
-	-ms-transform:translateY(100%);
-	transform:translateY(100%);
-}
-
-.hamburgesa.is-active .-navbar-toggler{
-    -webkit-transform:translateY(200%) rotate(45deg) !important;
-	-ms-transform:translateY(200%) rotate(45deg) !important;
-	transform:translateY(200%) rotate(45deg) !important;
-}
-.hamburgesa.is-active .-icon__list{
-	-webkit-transform:translateY(-200%) rotate(135deg) !important;
-	-ms-transform:translateY(-200%) rotate(135deg) !important;
-	transform:translateY(-200%) rotate(135deg) !important;
-}
-.collapse.is-active{
-    transform: translate3d(0px, 0px ,0px);
-}
-.collapse{
-    background-color: rgba(255, 255, 255, 0.95);
-     bottom: 0;
-     height: 100%;
-     left: 0;
-     overflow-y: scroll;
-     position: fixed;
-     top: 0;
-     transform: translate3d(0px, -100%, 0px);
-     transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
-     width: 100%;
-     z-index: 1001;
- }
- .collapse ul{
-   margin:0;padding:0;
- }
- .collapse ul li { 
-   list-style: none;
-     text-align:center;
-     font-family: Verdadna, Arial, Helvetica;
-     color:nav-color-text;
-     font-size:1.5rem;
-     line-height:3em;
-     height:3em;
-   color:#369;
-     text-transform:none;
-     font-weight:bold;
- }
- .collapse ul li a{
-   text-decoration:none;
-   color:#369;
- }
- .collapse ul li a:hover{
-   text-decoration:none;
-   color:#333;
- }
 /* opciones de navegador*/
-
-.navbar-custom .navbar-collapse .navbar-nav .nav-item .nav-link.active {
-    color: #0ea6e9;
-}
-
-.navbar-custom .navbar-collapse .navbar-nav .nav-item .nav-link {
-    font-size: 14.5px;
-    color: #1a3365;
-    background-color: transparent !important;
-    margin: 0 14px;
-    transition: all .5s;
-    position: relative;
-    font-weight: 500;
-}
-
-.navbar-custom .navbar-collapse .navbar-nav .nav-item .nav-link::before {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    width: 0px;
-    height: 2px;
-    background-color: #0ea6e9;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all .2s;
-}
-
-.navbar-custom.navbar-white .navbar-nav li a.active,
-.navbar-custom.navbar-white .navbar-nav li a:hover,
-.navbar-custom.navbar-white .navbar-nav li a:focus,
-.navbar-custom.navbar-white .navbar-nav li a:active {
-    color: #0ea6e9 !important;
-}
-
-.navbar-custom .navbar-collapse .navbar-nav .nav-item .nav-link.active::before {
-    width: 100%;
-}
 
 
 /* boton de navbar */
@@ -342,10 +230,8 @@ a .btn,
 
 .home-shape-arrow {
     display: block;
-    position: absolute;
     width: 100%;
     height: auto;
-    bottom: 25px;
     z-index: 1;
     left: 0;
 }
@@ -358,17 +244,6 @@ a .btn,
     text-align: center;
     display: inline-block;
 }
-
-.home-shape-arrow i {
-    background: #fff;
-    border: 1px solid #0ea6e9;
-    height: 50px;
-    width: 50px;
-    margin: 0 auto;
-    line-height: 50px;
-    border-radius: 30px;
-}
-
 .bi {
     height: 30px;
     width: 30px;
@@ -438,3 +313,7 @@ a .btn,
         width: 100%;
     }
 }
+
+/*
+    Section 01
+*/
