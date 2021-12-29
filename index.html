@@ -13,102 +13,87 @@
     <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
     <header>
-        <!-- <nav class=" navbar navbar-expand-lg fixed-top navbar-white navbar-custom sticky nav-sticky" id="navbar">
+
+        
+        <nav class=" navbar navbar-expand-lg fixed-top navbar-white navbar-custom sticky  "
+            id="navbar" >
             <div class="container">
-                <a href="index.html">
+                <a class="navbar-brand text-uppercase" href="index.html">
                     <img src="img/logo.png " alt height="25">
                 </a>
-                <div class="hamburgesa">
-                    <button class="navbar-toggler" type="checkbox " id="btn-menu" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                        aria-label="toggle navigati">
-                        <svg class="icon__list" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mx-auto" id="navbar-navlist">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg class="icon__list" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar-collapse">
                         <li class="nav-item"><a class="nav-link active" href="#home ">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#feactures ">Features</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about ">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#pricing ">Pricing</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact ">Contact</a></li>
                     </ul>
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center ">
                         <div class="me-5 flex-shrink-0 d-none d-lg-block">
                             <a href="#" class="btn nav-btn">Sign Up</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </nav> -->
-        <div class="col-12 header sinpa">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled">Disabled</a>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
-        </div>
+        </nav>
+
     </header>
-    <section class="section__home" id="home">
+    <section class="section home" id="home">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 ">
                     <div class="mt-5 pt-lg-5 text-center">
                         <h3>Make The Best Landing in The Market</h3>
                         <p class="text-muted fs-18 mb0">
                             Etiam sed.Interdum consequat proin vestibulum class at a euismod mus luctus quam.</p>
                         <div class="row justify-content-center mt-5 ">
                             <div class="col-lg-12 hstack  justify-content-center ">
-                                <div class="d-grid d-sm-blok ">
-                                    <a class="btn btn-primary">Get Started</a>
-                                    <a class="btn btn-primary btn-lg" data-bs-toggle="model"
-                                        data-bs-target="watchvideomodal">
-                                        <svg class="icon__play" xmlns="http://www.w3.org/2000/svg" width="16"
-                                            height="16" fill="currentColor" class="bi bi-caret-left-square"
-                                            viewBox="0 0 16 16">
-                                            <path
-                                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                            <path
-                                                d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082z" />
-                                        </svg> Watch the vedio
+                                <div class="d-grid  d-sm-blok ">
+                                    <a class="btn btn-primary my-2 btn1">Get Started</a>
+                                    <a class="btn btn-primary my-2 btn2" data-toggle="modal" data-target="#watchvideomodal">
+                                        <i class="fas fa-play "></i>
+                                        Watch the vedio
                                     </a>
+
                                 </div>
-                                <div class="model fade bd-example-model-lg watchivideomodal" data-keyboard="false"
-                                    tabindex="-1" aria-hidden="true">
-                                    <div class="modal-header border-0">
-                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                            aria-label="close"></button>
+                                <!-- Modal -->
+                            </div>
+                        </div>
+
+
+                        <div class="modal fade" id="watchvideomodal" tabindex="-1"
+                            aria-labelledby="watchvideomodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-center modal-dialog modal-lg">
+                                <div class="modal-content home-modal">
+                                    <div class="modal-header border-0 ">
+                                        <button type="button" id="close" class="btn-close btn-close-white"
+                                            data-dismiss="modal" aria-label="Close">
+                                            <i class="fas fa-times" id="fas"></i>
+
+                                        </button>
                                     </div>
-                                    <video id="VisaChipCarVideo" class="video-box" controls>
+                                    <video id="VisaChipCardVideo" class="video-box" controls="">
                                         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                                        <!-- Browser does not support <video> tag -->
                                     </video>
                                 </div>
                             </div>
                         </div>
-                        <img class="buy-about-img my5 img-fluid" src="img/home-2.png " alt=" " type>
+
+
+            <img class="buy-about-img my-5 img-fluid" src="img/home-2.png " >
 
                         <div class="client-list">
                             <div class="row justify-content-around mt-4">
@@ -134,17 +119,23 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row">
-                <div class="home-shape-arrow" style="text-align: center;">
-                    <a href="#features" class="mouse-dowm">
-                        <i class="fas fa-arrow-down"></i>
-                    </a>
+            <div class="">
+                <div class="circulo">
+                <div class="home-shape-arrow position" style="text-align: center;">
+                    
+                        <a href="#features" class="mouse-dowm">
+                            <i class="fas fa-arrow-down arrow-icon fal"></i>
+                        </a>
+                    
+                </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="sec-1" style="background-color: rgba(14,166,233,.04);">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dignissimos ea soluta sed, quae blanditiis reprehenderit voluptates! Dolorum est id magni magnam? Maxime hic reprehenderit ab officiis temporibus eveniet est?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dignissimos ea soluta sed, quae blanditiis
+            reprehenderit voluptates! Dolorum est id magni magnam? Maxime hic reprehenderit ab officiis temporibus
+            eveniet est?</p>
     </section>
     <section class="sec-2"></section>
     <section class="sec-3"></section>
@@ -152,8 +143,12 @@
     <section class="sec-5"></section>
     <section class="sec-6"></section>
     <section class="sec-7"></section>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
     <script type="text/javascript" src="js/index.js"></script>
 
 </body>
